@@ -1,9 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+/* eslint-disable @next/next/no-img-element */
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -14,110 +10,455 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
+      <main className="w-full">
+        <div>
+          <div className="container grid w-full h-screen grid-cols-1 overflow-x-hidden 2xl:grid-cols-2 md:max-w-full">
+            <div className="flex flex-col items-center w-full bg-white plain plain-sm layout-x-padding 2xl:justify-center 2xl:h-full">
+              <div
+                className="flex flex-col items-center mx-auto"
+                style={{ maxWidth: "32rem" }}
+              >
+                <div className="mb-4 md:mb-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="32"
+                    viewBox="0 0 80 32"
+                    fill="none"
+                    className="w-auto h-6 md:h-8"
+                    role="img"
+                    aria-labelledby="a2891hpit74vrnjzuchgb19rr3rhe79i"
+                  >
+                    <title id="a2891hpit74vrnjzuchgb19rr3rhe79i">Sign up</title>
+                    <path
+                      d="M78.0592 32H1.29678C0.701516 32 0.359296 31.3953 0.757708 30.953C2.03461 29.5356 4.37595 27.907 6.03022 27.907C8.64532 27.907 9.0189 29.7674 11.2604 29.7674C14.9963 29.7674 19.1057 17.1163 25.4566 17.1163C31.8076 17.1163 31.8076 24.5581 38.9057 24.5581C46.0038 24.5581 48.9925 0 59.0793 0C67.9274 0 76.7756 18.368 79.5882 30.1092C79.8226 31.0876 79.0653 32 78.0592 32Z"
+                      fill="#4A1D96"
+                    ></path>
+                  </svg>
+                </div>
+                <h1 className="mb-2 font-medium text-center md:mb-3 display-xs md:display-sm">
+                  Find a remote job you love
+                </h1>
+                <p className="mb-8 text-base text-center text-gray-600 md:text-lg">
+                  Browse remote jobs from 2,400+ companies.
+                </p>
+                <div className="w-full mb-8" style={{ maxWidth: "25rem" }}>
+                  <a
+                    tabIndex={0}
+                    className="flex flex-row items-center justify-center w-auto w-full mb-8 btn btn-oauth btn-lg"
+                  >
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="h-auto mr-2 stroke-current"
+                        role="img"
+                        aria-labelledby="a4o45reltxcgo0ynydapr8fpmcayjawk"
+                      >
+                        <title id="a4o45reltxcgo0ynydapr8fpmcayjawk">
+                          Sign up with Google
+                        </title>
+                        <g clip-path="url(#clip0_5460_23490)">
+                          <path
+                            d="M23.7663 12.2763C23.7663 11.4605 23.7001 10.6404 23.559 9.83789H12.2402V14.4589H18.722C18.453 15.9492 17.5888 17.2676 16.3233 18.1054V21.1037H20.1903C22.4611 19.0137 23.7663 15.9272 23.7663 12.2763Z"
+                            fill="#4285F4"
+                          ></path>
+                          <path
+                            d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008Z"
+                            fill="#34A853"
+                          ></path>
+                          <path
+                            d="M5.50277 14.3002C5.00011 12.8099 5.00011 11.196 5.50277 9.70569V6.61475H1.51674C-0.185266 10.0055 -0.185266 14.0004 1.51674 17.3912L5.50277 14.3002Z"
+                            fill="#FBBC04"
+                          ></path>
+                          <path
+                            d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61481L5.50264 9.70575C6.45064 6.86173 9.10947 4.74966 12.2401 4.74966Z"
+                            fill="#EA4335"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_5460_23490">
+                            <rect width="24" height="24" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span>Sign up with Google</span>
+                  </a>
+                  <form
+                    data-controller="form"
+                    data-action="submit->form#submitSignUp"
+                    data-remote="false"
+                    data-form-target="form"
+                    id="signup_form"
+                    action="/onboarding/talent"
+                    accept-charset="UTF-8"
+                    method="post"
+                  >
+                    <div className="flex flex-row mb-5">
+                      <div className="w-full pb-0 pr-2">
+                        <div className="w-full h-full">
+                          <label
+                            htmlFor="input"
+                            className="text-sm font-medium text-gray-700 mb-1.5 "
+                          >
+                            First name
+                          </label>
+                          <div className="relative flex rounded-lg ">
+                            <input
+                              type="text"
+                              name="user[first_name]"
+                              value=""
+                              className="input pl-3.5 pr-3.5 "
+                              placeholder="First name"
+                              tabIndex={0}
+                              data-autocomplete-target=""
+                              data-dropdown-input-target=""
+                              data-numeric-target=""
+                              data-action=" keydown->form#clearError focusout->form#validate keyup->form#silentValidate    "
+                              id="signup_first_name"
+                              data-autocomplete-url=""
+                              spellCheck="false"
+                              data-ms-editor="true"
+                            />
+                            <div
+                              className="absolute inset-y-0 right-0 pl-2 pr-3.5 flex items-center pointer-events-none hidden"
+                              tabIndex={-1}
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                className="w-5 h-auto text-red-500 stroke-current"
+                                role="img"
+                                aria-labelledby="a51d3skv0kwpub2drrfj17bdymunl42t"
+                              >
+                                <title id="a51d3skv0kwpub2drrfj17bdymunl42t">
+                                  Error
+                                </title>
+                                <path
+                                  d="M12 8V12M12 16H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                  stroke="#currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <p
+                            className="text-red-500 mt-1.5 text-sm form-error hidden"
+                            id="signup_first_name_error"
+                            style={{ maxWidth: "fit-content" }}
+                          ></p>
+                        </div>
+                      </div>
+                      <div className="w-full pl-2">
+                        <div className="w-full h-full">
+                          <label
+                            htmlFor="input"
+                            className="text-sm font-medium text-gray-700 mb-1.5 "
+                          >
+                            Last name
+                          </label>
+                          <div className="relative flex rounded-lg ">
+                            <input
+                              type="text"
+                              name="user[last_name]"
+                              value=""
+                              className="input
+            
+            
+            
+            
+            
+            pl-3.5
+            pr-3.5
+            
+            "
+                              placeholder="Last name"
+                              tabIndex={0}
+                              data-autocomplete-target=""
+                              data-dropdown-input-target=""
+                              data-numeric-target=""
+                              data-action=" keydown->form#clearError focusout->form#validate keyup->form#silentValidate    "
+                              id="signup_last_name"
+                              data-autocomplete-url=""
+                              spellCheck="false"
+                              data-ms-editor="true"
+                            />
+                            <div
+                              className="absolute inset-y-0 right-0 pl-2 pr-3.5 flex items-center pointer-events-none hidden"
+                              tabIndex={-1}
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                className="w-5 h-auto text-red-500 stroke-current"
+                                role="img"
+                                aria-labelledby="a51d3skv0kwpub2drrfj17bdymunl42t"
+                              >
+                                <title id="a51d3skv0kwpub2drrfj17bdymunl42t">
+                                  Error
+                                </title>
+                                <path
+                                  d="M12 8V12M12 16H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                  stroke="#currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <p
+                            className="text-red-500 mt-1.5 text-sm form-error hidden"
+                            id="signup_last_name_error"
+                            style={{ maxWidth: "fit-content" }}
+                          ></p>
+                        </div>
+                      </div>
+                      <div className="hidden">
+                        <div className="w-full h-full">
+                          <div className="relative flex rounded-lg ">
+                            <input
+                              type="text"
+                              name="user[name]"
+                              value=" "
+                              className="input
+            
+            
+            
+            
+            
+            pl-3.5
+            pr-3.5
+            
+            "
+                              placeholder="name"
+                              tabIndex={0}
+                              data-autocomplete-target=""
+                              data-dropdown-input-target=""
+                              data-numeric-target=""
+                              data-action="     "
+                              data-autocomplete-url=""
+                              spellCheck="false"
+                              data-ms-editor="true"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-row mb-5">
+                      <div className="w-full h-full">
+                        <label
+                          htmlFor="input"
+                          className="text-sm font-medium text-gray-700 mb-1.5 "
+                        >
+                          Email
+                        </label>
+                        <div className="relative flex rounded-lg ">
+                          <input
+                            type="email"
+                            name="user[email]"
+                            value=""
+                            className="input pl-3.5 pr-3.5"
+                            placeholder="Enter your email"
+                            tabIndex={0}
+                            data-autocomplete-target=""
+                            data-dropdown-input-target=""
+                            data-numeric-target=""
+                            data-action=" keydown->form#clearError focusout->form#validate keyup->form#silentValidate    "
+                            id="signup_email"
+                            data-autocomplete-url=""
+                          />
+                          <div
+                            className="absolute inset-y-0 right-0 pl-2 pr-3.5 flex items-center pointer-events-none hidden"
+                            tabIndex={-1}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              className="w-5 h-auto text-red-500 stroke-current"
+                              role="img"
+                              aria-labelledby="a51d3skv0kwpub2drrfj17bdymunl42t"
+                            >
+                              <title id="a51d3skv0kwpub2drrfj17bdymunl42t">
+                                Error
+                              </title>
+                              <path
+                                d="M12 8V12M12 16H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                stroke="#currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <p
+                          className="text-red-500 mt-1.5 text-sm form-error hidden"
+                          id="signup_email_error"
+                          style={{ maxWidth: "fit-content" }}
+                        ></p>
+                      </div>
+                    </div>
+                    <div className="flex flex-row mb-6">
+                      <div className="w-full h-full">
+                        <label
+                          htmlFor="input"
+                          className="text-sm font-medium text-gray-700 mb-1.5 "
+                        >
+                          Password
+                        </label>
+                        <div className="relative flex rounded-lg ">
+                          <input
+                            type="password"
+                            name="user[password]"
+                            value=""
+                            className="input
+            pl-3.5
+            pr-3.5
+            "
+                            placeholder="Choose a password"
+                            tabIndex={0}
+                            data-autocomplete-target=""
+                            data-dropdown-input-target=""
+                            data-numeric-target=""
+                            data-action=" keydown->form#clearError focusout->form#validate keyup->form#silentValidate    "
+                            id="signup_password"
+                            data-autocomplete-url=""
+                          />
+                          <div
+                            className="absolute inset-y-0 right-0 pl-2 pr-3.5 flex items-center pointer-events-none hidden"
+                            tabIndex={-1}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              className="w-5 h-auto text-red-500 stroke-current"
+                              role="img"
+                              aria-labelledby="a51d3skv0kwpub2drrfj17bdymunl42t"
+                            >
+                              <title id="a51d3skv0kwpub2drrfj17bdymunl42t">
+                                Error
+                              </title>
+                              <path
+                                d="M12 8V12M12 16H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                stroke="#currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <p
+                          className="text-red-500 mt-1.5 text-sm form-error hidden"
+                          id="signup_password_error"
+                          style={{ maxWidth: "fit-content" }}
+                        ></p>
+                      </div>
+                    </div>
+                    <div className="mb-8">
+                      <a
+                        tabIndex={0}
+                        className="flex flex-row items-center justify-center w-auto w-full btn btn-primary btn-lg"
+                        data-action="click->form#submitSignUp"
+                        data-submit-text="Creating account..."
+                        data-submit-button=""
+                        rel="noopener"
+                      >
+                        <span>Continue</span>
+                      </a>
+                      <input
+                        type="submit"
+                        style={{
+                          position: "absolute",
+                          left: "-9999px",
+                          width: "1px",
+                          height: "1px",
+                        }}
+                        tabIndex={-1}
+                        onsubmit="return false;"
+                      />
+                    </div>
+                  </form>
+                  <p className="text-base text-center text-gray-600">
+                    Already have an account?{" "}
+                    <a className="font-medium" href="/login">
+                      Log in
+                    </a>
+                  </p>
+                </div>
+                <p
+                  className="text-sm text-center text-gray-600"
+                  style={{ maxWidth: "25rem" }}
+                >
+                  By clicking &apos;Continue&apos;, you acknowledge that you
+                  have read and accept the
+                  <a className="font-medium" href="/terms">
+                    {" "}
+                    Terms of Service{" "}
+                  </a>{" "}
+                  and
+                  <a className="font-medium" href="/privacy">
+                    {" "}
+                    Privacy Policy
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+            <div
+              className="relative hidden w-full h-full overflow-hidden 2xl:flex 2xl:flex-col bg-gray-50"
+              id="onboarding-right"
+              style={{ paddingLeft: "5vw", paddingRight: "5vw" }}
             >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+              <div style={{ marginBottom: "104px", marginTop: "10vh" }}>
+                <p
+                  className="mb-8 font-medium text-gray-900"
+                  style={{ fontSize: "min(2vw, 40px)" }}
+                >
+                  With custom search alerts, I was the first to apply for my
+                  dream remote job and can now work on the road.
+                </p>
+                <p className="mb-1 text-lg font-medium text-gray-900">
+                  — Anna Cheng
+                </p>
+                <p className="text-base text-gray-600">Head of Growth, Turo</p>
+              </div>
+              <div className="relative">
+                <img
+                  loading="lazy"
+                  alt=""
+                  className="absolute z-10 h-auto border-gray-900 border-5 rounded-xl"
+                  style={{ width: "56vw", maxWidth: "1312px" }}
+                  src="https://himalayas.app/assets/other/job-seeker-accounts@2x-f3547ed6b6ec3967c09487dfaaa7e45b3ff7467ae0732873bf327849180a4d2b.jpg"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+          <div
+            id="flash-wrapper"
+            className="flex flex-row items-center justify-center w-full"
+          ></div>
         </div>
       </main>
     </>
-  )
+  );
 }
